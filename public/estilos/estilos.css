@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Righteous', cursive;
+}
+
+.root {
+    /* background-color: blue; */
+}
+
+.pagina-inicial {
+    background-color: #FB6B6B;
+    width: 203px;
+    height: 381px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 90px;  
+}
+
+.pagina-inicial img {
+    width: 55px;
+    height: 65px;
+}
+
+.pagina-inicial-texto {
+    color: #FFFFFF;
+    font-family: righteous;
+    font-size: 25px;
+}
+
+.pagina-inicial-botao {
+    width: 141px;
+    height: 31px;
+    border-radius: 5px;
+    margin-top: 73px;
+}
+
+.botao-texto{
+    font-family: recursive;
+    font-size: 12px;
+    font-weight: 400;
+    color: #D70900;
+}
