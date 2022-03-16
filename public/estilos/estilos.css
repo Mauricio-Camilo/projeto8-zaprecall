@@ -126,3 +126,69 @@ body {
     font-weight: 400;
     font-size: 12px;
 }
+
+/* FLASHCARD FRENTE */
+
+.flashcard {
+    width: 182px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #FFFFD5;
+    margin-bottom: 14px;
+    padding-left: 6px;
+    padding-right: 3px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.flashcard p {
+    font-family: recursive;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333333;
+    padding-top: 13px;
+}
+
+.flashcard-flip {
+    font-size: 20px;
+    position: absolute;
+    bottom: 7px;
+    right: 8px;
+}
+
+/* FLASHCARD TRÁS */
+
+.respostas {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resposta-opcao {
+    width: 55px;
+    height: 24px;
+    border-radius: 5px;
+    margin-top: 12px;   
+}
+
+.resposta-opcao p {
+    font-family: recursive;
+    font-weight: 400;
+    font-size: 7px;
+    color: #FFFFFF;
+}
+
+.vermelho {
+    background-color: #FF3030;
+}
+
+.laranja {
+    background-color: #FF922E;
+}
+
+.verde { 
+    background-color: #2FBE34;
+}
+
+
+
