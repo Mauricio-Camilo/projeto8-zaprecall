@@ -14,7 +14,8 @@ body {
 .tela-principal {
     background-color: #FB6B6B;
     width: 203px;
-    height: 381px;
+    height: 100%;
+    padding-bottom: 100px;
     position: relative;
 }
 
@@ -155,7 +156,6 @@ body {
 }
 
 .flashcard-flip {
-    font-size: 20px;
     position: absolute;
     bottom: 7px;
     right: 8px;
