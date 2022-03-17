@@ -5,7 +5,10 @@ import PaginaFlashcards from "./PaginaFlashcards"
 
 function App () {
     return (
-        <PaginaFlashcards />
+        <>
+        <PaginaInicial />
+        <PaginaPerguntas />
+        </>
     )
 }
 
