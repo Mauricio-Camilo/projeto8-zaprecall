@@ -116,15 +116,20 @@ body {
     height: 50px;
     border: 1px solid black;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .concluidos p {
     font-family: recursive;
     font-weight: 400;
     font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.concluidos-icones {
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
 }
 
 /* FLASHCARD FRENTE */
@@ -159,24 +164,28 @@ body {
 /* FLASHCARD TRÁS */
 
 .respostas {
-    background-color: blue;
     display: flex;
     justify-content: space-between;
 }
 
-.resposta-opcao {
+.resposta {
     width: 55px;
     height: 24px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 12px;   
 }
 
-.resposta-opcao p {
+.resposta span {
     font-family: recursive;
     font-weight: 400;
     font-size: 7px;
     color: #FFFFFF;
+    text-align: center;
 }
+
 
 .vermelho {
     background-color: #FF3030;
@@ -188,6 +197,25 @@ body {
 
 .verde { 
     background-color: #2FBE34;
+}
+
+.respondido {
+    text-decoration: line-through;
+    /* ativar a classe da resposta */
+}
+
+.icone-vermelho {
+    color:#FF3030;
+}
+
+
+.icone-laranja {
+    color:#FF922E;
+}
+
+
+.icone-verde {
+    color:#2FBE34;
 }
 
 

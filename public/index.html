@@ -56,22 +56,33 @@
         <p class="tela-2-texto"> ZapRecall </p>
       </header>
       <div class="container">
-        <div class="flashcard">
+        <div class="perguntas"> <!-- FRENTE DO FLASHCARD -->
+          <p>Pergunta 1</p> 
+          <ion-icon class="perguntas-icone" name="play-outline"></ion-icon>
+        </div>
+        <div class="perguntas"> <!-- CHECK DO FLASHCARD -->
+          <p class="respondido">Pergunta 1</p> 
+          <!-- <ion-icon class="perguntas-icone" name="play-outline"></ion-icon> -->
+          <!-- <ion-icon class="icone-vermelho" name="close-circle"></ion-icon> -->
+          <!-- <ion-icon class="icone-laranja" name="help-circle"></ion-icon> -->
+          <ion-icon class="icone-verde" name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="flashcard"> <!-- PERGUNTA DO FLASHCARD -->
           <p>O que é JSX?</p>
           <img class="flashcard-flip" src="./ZapRecall-Recursos/setinha.png">
         </div>
-        <div class="flashcard">
+        <div class="flashcard"> <!-- RESPOSTA DO FLASHCARD -->
           <p>JSX é uma sintaxe para escrever HTML
           </p>
-          <div class="respostas">
-            <div class="resposta-opcao vermelho">
-              <p>Não lembrei</p>
+          <div class="respostas"> 
+            <div class="resposta vermelho">
+              <span>Não lembrei</span>
             </div>
-            <div class="resposta-opcao laranja">
-              <p>Quase não lembrei</p>
+            <div class="resposta laranja">
+              <span>Quase não lembrei</span>
             </div>
-            <div class="resposta-opcao verde">
-              <p>ZAP!</p>
+            <div class="resposta verde">
+              <span>ZAP!</span>
             </div>
           </div>
         </div>
@@ -82,6 +93,11 @@
       </div>
       <footer class="concluidos">
         <p>0/4 CONCLUIDOS</p>
+        <div class="concluidos-icones">
+          <ion-icon class="icone-vermelho" name="close-circle"></ion-icon>
+          <ion-icon class="icone-laranja" name="help-circle"></ion-icon>
+          <ion-icon class="icone-verde" name="checkmark-circle"></ion-icon>
+       </div>
       </footer>
     </div>
 
