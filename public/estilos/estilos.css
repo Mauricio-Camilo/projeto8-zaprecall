@@ -155,6 +155,10 @@ body {
     position: relative;
 }
 
+.costas {
+    height: 100px;
+}
+
 .flashcard p {
     font-family: recursive;
     font-weight: 400;
