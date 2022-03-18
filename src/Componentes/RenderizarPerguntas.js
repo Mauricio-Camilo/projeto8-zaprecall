@@ -6,7 +6,7 @@ function RenderizarPerguntas(props) {
 
     return (
         <>
-        {answering? <FlashCard questao={props.pergunta}/> : <Pergunta questao={props.pergunta} setAnswering={setAnswering}/>  }      
+        {answering? <FlashCard questao={props.pergunta}/> : <Pergunta questao={props.flashcard} setAnswering={setAnswering}/>  }      
         </> 
     )
 }
