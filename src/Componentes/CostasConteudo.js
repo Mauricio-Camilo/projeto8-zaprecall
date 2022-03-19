@@ -14,7 +14,7 @@ function CostasConteudo(props) {
             </p>
             <div class="respostas">
                 {opcoesRespostas.map(resposta =>
-                    <RenderizarCostas classe={resposta.classe} opção={resposta.opção} cor={resposta.cor} setFinalizado={props.setFinalizado} setCor={props.setCor}/>)}
+                    <RenderizarCostas classe={resposta.classe} opção={resposta.opção} cor={resposta.cor} setFinalizado={props.setFinalizado} setCor={props.setCor} contador={props.contador} setContador={props.setContador}/>)}
             </div>
         </div>
     )

@@ -3,7 +3,6 @@ import CostasConteudo from "./CostasConteudo";
 import PerguntaFinalizada from "./PerguntaFinalizada";
 
 function Costas(props) {
-
     const [finalizado, setFinalizado] = React.useState(false);
     const [cor, setCor] = React.useState("");
 
@@ -11,7 +10,7 @@ function Costas(props) {
         <>
             {finalizado?
             <PerguntaFinalizada cor={cor} flashcard={props.flashcard}/>:
-            <CostasConteudo resposta={props.resposta} setCor={setCor} setFinalizado={setFinalizado} />
+            <CostasConteudo resposta={props.resposta} setCor={setCor} setFinalizado={setFinalizado} contador={props.contador} setContador={props.setContador}/>
             }
         </>
     )

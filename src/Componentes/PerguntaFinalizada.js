@@ -1,4 +1,5 @@
 function PerguntaFinalizada (props) {
+
     if (props.cor === "vermelho") {
         return (
             <div class="perguntas">
@@ -24,5 +25,6 @@ function PerguntaFinalizada (props) {
         )
     }
 }
+
 
 export default PerguntaFinalizada;

@@ -8,7 +8,7 @@ function Flashcard(props) {
     return (
         <>
             {cardVirado ?
-                <Costas flashcard={props.flashcard} resposta={props.resposta}/> :
+                <Costas flashcard={props.flashcard} resposta={props.resposta} contador={props.contador} finalizado={props.finalizado} setFinalizado={props.setFinalizado} contador={props.contador} setContador={props.setContador}/> :
                 <Frente pergunta={props.pergunta} setCardVirado={setCardVirado} />
             }
         </>

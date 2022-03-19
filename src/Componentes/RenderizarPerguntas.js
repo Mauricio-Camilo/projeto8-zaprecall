@@ -10,7 +10,7 @@ function RenderizarPerguntas(props) {
     return (
         <>
         {answering? 
-        <Flashcard flashcard={props.flashcard} pergunta={props.pergunta} resposta={props.resposta}/> : 
+        <Flashcard flashcard={props.flashcard} pergunta={props.pergunta} resposta={props.resposta} contador={props.contador} setContador={props.setContador}/> : 
         <Pergunta flashcard={props.flashcard} setAnswering={setAnswering}/>}      
         </> 
     )

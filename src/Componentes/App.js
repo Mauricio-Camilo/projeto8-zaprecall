@@ -1,3 +1,4 @@
+import React from "react"
 import PaginaInicial from "./PaginaInicial"
 import PaginaPerguntas from "./PaginaPerguntas"
 
