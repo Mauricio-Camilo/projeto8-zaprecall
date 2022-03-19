@@ -168,6 +168,8 @@ body {
 }
 
 .flashcard-flip {
+    width: 12px !important;
+    height: 12px !important;
     position: absolute;
     bottom: 7px;
     right: 8px;
@@ -217,17 +219,17 @@ body {
 }
 
 .icone-vermelho {
-    color:#FF3030;
+    color:#FF3030 !important;
 }
 
 
 .icone-laranja {
-    color:#FF922E;
-}
+    color:#FF922E !important;
+} 
 
 
 .icone-verde {
-    color:#2FBE34;
+    color:#2FBE34 !important;
 }
 
 

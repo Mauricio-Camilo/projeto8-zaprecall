@@ -5,12 +5,12 @@ import Flashcard from "./Flashcard";
 
 function RenderizarPerguntas(props) {
     const [answering, setAnswering] = React.useState(false);
-    const [cardVirado, setCardVirado] = React.useState(false);
+    // const [cor, setCor] = React.useState("preto");
 
     return (
         <>
         {answering? 
-        <Flashcard pergunta={props.pergunta} resposta={props.resposta} estado={cardVirado} cardVirado={setCardVirado}/> : 
+        <Flashcard flashcard={props.flashcard} pergunta={props.pergunta} resposta={props.resposta}/> : 
         <Pergunta flashcard={props.flashcard} setAnswering={setAnswering}/>}      
         </> 
     )
