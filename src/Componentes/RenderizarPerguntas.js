@@ -13,7 +13,7 @@ function RenderizarPerguntas(props) {
         <Flashcard flashcard={props.flashcard} pergunta={props.pergunta} 
         resposta={props.resposta} contador={props.contador} 
         setContador={props.setContador} setIcone={props.setIcone}
-        array = {props.array} setArray = {props.setArray}/>: 
+        array = {props.array} setArray = {props.setArray} setParabens = {props.setParabens}/>: 
 
         <Pergunta flashcard={props.flashcard} setAnswering={setAnswering}/>}      
         </> 

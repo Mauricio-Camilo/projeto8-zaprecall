@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function PaginaInicial() {
-    
+
     const [visivel, setVisivel] = React.useState(true); // Estado criado, inicialmente é true para: a tela está visivel?
     // No onClick, ele vai reverter o estado da tela para false, ou seja, ela é visivel? não
     const css = `tela-principal ${visivel ? "mostrar" : "escondido"}` // Uso do ternário

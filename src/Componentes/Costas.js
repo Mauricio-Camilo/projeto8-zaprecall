@@ -15,7 +15,7 @@ function Costas(props) {
             <CostasConteudo resposta={props.resposta} setCor={setCor} 
             setFinalizado={setFinalizado} contador={props.contador} 
             setContador={props.setContador} setIcone={props.setIcone}
-            array = {props.array} setArray = {props.setArray}/>
+            array = {props.array} setArray = {props.setArray} setParabens = {props.setParabens}/>
             }
         </>
     )

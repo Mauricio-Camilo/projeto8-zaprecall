@@ -18,7 +18,7 @@ function CostasConteudo(props) {
                     cor={resposta.cor} setFinalizado={props.setFinalizado} 
                     setCor={props.setCor} contador={props.contador} 
                     setContador={props.setContador} setIcone={props.setIcone}
-                    array = {props.array} setArray = {props.setArray}/>)}
+                    array = {props.array} setArray = {props.setArray} setParabens = {props.setParabens}/>)}
             </div>
         </div>
     )

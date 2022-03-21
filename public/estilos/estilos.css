@@ -15,7 +15,7 @@ body {
 .tela-principal {
     background-color: #FB6B6B;
     width: 203px;
-    height: 667px;
+    height: 767px;
     padding-bottom: 100px;
     position: relative;
 }
@@ -93,7 +93,7 @@ body {
 
 .perguntas {
     width: 182px;
-    height: 40px;
+    height: 65px;
     border-radius: 5px;
     background-color: #FFFFFF;
     display: flex;
@@ -120,7 +120,7 @@ body {
     bottom: 0;
     background-color: #FFFFFF;
     width: 203px;
-    height: 50px;
+    height: 70px;
     border: 1px solid black;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -132,7 +132,7 @@ body {
 .concluidos p {
     font-family: recursive;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
     padding-top: 10px;
 }
 
@@ -220,18 +220,70 @@ body {
 }
 
 .icone-vermelho {
+    font-size: 23px;
     color:#FF3030 !important;
 }
 
 
 .icone-laranja {
+    font-size: 23px;
     color:#FF922E !important;
 } 
 
 
 .icone-verde {
+    font-size: 23px;
     color:#2FBE34 !important;
 }
+
+/* FINALIZAÇÃO DAS PERGUNTAS */
+
+.concluidos-finalizado {
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    width: 203px;
+    height: 171px;
+    border: 1px solid black;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.finalizado {
+    margin-top: 25px;
+    margin-bottom: 24px;
+
+    /* padding-top: 15px; */
+}
+
+.finalizado-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.finalizado-figura {
+    width: 23px !important;
+    padding-bottom: 10px;
+    margin-right: 12px;
+}
+
+.finalizado-mensagem {
+    font-family: Recursive;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.finalizado-container span {
+    font-family: Recursive;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 
 
 
