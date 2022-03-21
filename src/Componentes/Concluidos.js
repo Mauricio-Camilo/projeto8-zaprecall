@@ -1,7 +1,7 @@
-function Concluidos (props) {
+function Concluidos(props) {
     return (
         <footer className="concluidos">
-         <p>{props.contagem}/{props.comprimento} CONCLUIDOS</p>
+            <p>{props.contagem}/{props.comprimento} CONCLUIDOS</p>
         </footer>
     )
 }

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Cabeçalho from "./Cabeçalho";
 import RenderizarPerguntas from "./RenderizarPerguntas";
 import Concluidos from "./Concluidos";
+import ConcluidosIcones from "./ConcluidosIcones";
+
 
 function PaginaPerguntas() {
 
@@ -15,20 +17,31 @@ function PaginaPerguntas() {
         {flashcard: "Pergunta 7", pergunta: "Usamos props para __", resposta: "passar diferentes informações para componentes "},
         {flashcard: "Pergunta 8", pergunta: "Usamos estado (state) para __", resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"},
     ]
+
     const [contador,setContador] = React.useState(0);
+    const [array,setArray] = React.useState([]);
+    const [icone,setIcone] = React.useState("");
     listaPerguntas.sort(Comparador);
     
     return ( 
-        (<div className="tela-principal">
+        <div className="tela-principal">
             <div className="tela-2">
                 <Cabeçalho />
                 <div className="container">
-                    {listaPerguntas.map(lista => <RenderizarPerguntas flashcard={lista.flashcard} pergunta={lista.pergunta} resposta={lista.resposta} contador={contador} setContador={setContador}/>
+                    {listaPerguntas.map(lista => <RenderizarPerguntas 
+                    flashcard={lista.flashcard} pergunta={lista.pergunta} resposta={lista.resposta} 
+                    contador={contador} setContador={setContador} setIcone={setIcone}
+                    array={array} setArray={setArray}/>
                     )}
                 </div>
+                {contador>=1?
+                <ConcluidosIcones contagem={contador} comprimento={listaPerguntas.length} 
+                icone={icone} array={array} setArray={setArray}/>:
+
                 <Concluidos contagem={contador} comprimento={listaPerguntas.length}/>
+                }
             </div>
-        </div>)          
+        </div>          
     )
                     
 }

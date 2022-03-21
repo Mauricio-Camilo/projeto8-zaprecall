@@ -14,7 +14,11 @@ function CostasConteudo(props) {
             </p>
             <div class="respostas">
                 {opcoesRespostas.map(resposta =>
-                    <RenderizarCostas classe={resposta.classe} opção={resposta.opção} cor={resposta.cor} setFinalizado={props.setFinalizado} setCor={props.setCor} contador={props.contador} setContador={props.setContador}/>)}
+                    <RenderizarCostas classe={resposta.classe} opção={resposta.opção} 
+                    cor={resposta.cor} setFinalizado={props.setFinalizado} 
+                    setCor={props.setCor} contador={props.contador} 
+                    setContador={props.setContador} setIcone={props.setIcone}
+                    array = {props.array} setArray = {props.setArray}/>)}
             </div>
         </div>
     )

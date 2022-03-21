@@ -5,12 +5,16 @@ import Flashcard from "./Flashcard";
 
 function RenderizarPerguntas(props) {
     const [answering, setAnswering] = React.useState(false);
-    // const [cor, setCor] = React.useState("preto");
-
+    
     return (
         <>
         {answering? 
-        <Flashcard flashcard={props.flashcard} pergunta={props.pergunta} resposta={props.resposta} contador={props.contador} setContador={props.setContador}/> : 
+
+        <Flashcard flashcard={props.flashcard} pergunta={props.pergunta} 
+        resposta={props.resposta} contador={props.contador} 
+        setContador={props.setContador} setIcone={props.setIcone}
+        array = {props.array} setArray = {props.setArray}/>: 
+
         <Pergunta flashcard={props.flashcard} setAnswering={setAnswering}/>}      
         </> 
     )

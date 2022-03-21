@@ -9,8 +9,13 @@ function Costas(props) {
     return (
         <>
             {finalizado?
+
             <PerguntaFinalizada cor={cor} flashcard={props.flashcard}/>:
-            <CostasConteudo resposta={props.resposta} setCor={setCor} setFinalizado={setFinalizado} contador={props.contador} setContador={props.setContador}/>
+
+            <CostasConteudo resposta={props.resposta} setCor={setCor} 
+            setFinalizado={setFinalizado} contador={props.contador} 
+            setContador={props.setContador} setIcone={props.setIcone}
+            array = {props.array} setArray = {props.setArray}/>
             }
         </>
     )
