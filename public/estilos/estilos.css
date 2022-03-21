@@ -14,9 +14,11 @@ body {
 
 .tela-principal {
     background-color: #FB6B6B;
-    width: 203px;
-    height: 767px;
-    padding-bottom: 100px;
+    width: 100vw;
+    min-width: 375px;
+    height: 100vw;
+    min-height: 1067px;
+    /* padding-bottom: 100px; */
     position: relative;
 }
 
@@ -35,26 +37,26 @@ body {
 }
 
 .pagina-inicial img {
-    width: 55px;
-    height: 65px;
+    width: 136px;
+    height: 161px;
 }
 
 .pagina-inicial-texto {
     color: #FFFFFF;
-    font-family: righteous;
+    font-family: Righteous;
     font-size: 25px;
 }
 
 .pagina-inicial-botao {
-    width: 141px;
-    height: 31px;
+    width: 246px;
+    height: 54px;
     border-radius: 5px;
     margin-top: 73px;
 }
 
 .botao-texto{
-    font-family: recursive;
-    font-size: 12px;
+    font-family: Recursive;
+    font-size: 18px;
     font-weight: 400;
     color: #D70900;
 }
@@ -68,18 +70,19 @@ body {
 .cabeçalho {
     display: flex;
     justify-content: center;
-    padding-top: 22px;
+    padding-top: 42px;
 }
 
 .tela-2 img {
-    width: 26px;
-    height: 30px;
+    width: 52px;
+    height: 60px;
+    margin-right: 20px;
 }
 
 .tela-2-texto {
     color: #FFFFFF;
-    font-family: righteous;
-    font-size: 20px;
+    font-family: Righteous;
+    font-size: 44px;
     padding-top: 3px;
     padding-left: 3px;
 }
@@ -92,34 +95,38 @@ body {
 }
 
 .perguntas {
-    width: 182px;
+    width: 300px;
     height: 65px;
     border-radius: 5px;
     background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
-    padding-left: 6px;
-    padding-right: 12px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .perguntas p {
-    font-family: recursive;
+    font-family: Recursive;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 16px;
     color: #333333;
 }
 
 .perguntas-icone {
-    font-size: 13px;
+    font-size: 20px;
 }
+
+/* BARRA DE CONCLUIDOS */
 
 .concluidos {
     position: fixed;
     bottom: 0;
     background-color: #FFFFFF;
-    width: 203px;
+    width: 100vw;
+    min-width: 375px;
     height: 70px;
     border: 1px solid black;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
@@ -130,7 +137,7 @@ body {
 }
 
 .concluidos p {
-    font-family: recursive;
+    font-family: Recursive;
     font-weight: 400;
     font-size: 18px;
     padding-top: 10px;
@@ -145,8 +152,8 @@ body {
 /* FLASHCARD FRENTE */
 
 .flashcard {
-    width: 182px;
-    height: 80px;
+    width: 300px;
+    height: 151px;
     border-radius: 5px;
     background-color: #FFFFD5;
     margin-bottom: 14px;
@@ -157,46 +164,46 @@ body {
 }
 
 .costas {
-    height: 100px;
+    height: 151px;
 }
 
 .flashcard p {
-    font-family: recursive;
+    font-family: Recursive;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
     color: #333333;
     padding-top: 13px;
 }
 
 .flashcard-flip {
-    width: 12px !important;
-    height: 12px !important;
+    width: 30px !important;
+    height: 25px !important;
     position: absolute;
     bottom: 7px;
-    right: 8px;
+    right: 6px;
 }
 
 /* FLASHCARD TRÁS */
 
 .respostas {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .resposta {
-    width: 55px;
-    height: 24px;
+    width: 85px;
+    height: 37px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12px;   
+    margin-top: 25px;   
 }
 
 .resposta span {
-    font-family: recursive;
+    font-family: Recursive;
     font-weight: 400;
-    font-size: 7px;
+    font-size: 12px;
     color: #FFFFFF;
     text-align: center;
 }
@@ -219,44 +226,40 @@ body {
     /* ativar a classe da resposta */
 }
 
-.icone-vermelho {
+.icone {
     font-size: 23px;
+}
+
+.red {
     color:#FF3030 !important;
 }
 
-
-.icone-laranja {
-    font-size: 23px;
+.orange {
     color:#FF922E !important;
-} 
-
-
-.icone-verde {
-    font-size: 23px;
-    color:#2FBE34 !important;
 }
 
+.green {
+    color:#2FBE34 !important;
+}
 /* FINALIZAÇÃO DAS PERGUNTAS */
 
 .concluidos-finalizado {
     position: fixed;
     bottom: 0;
     background-color: #FFFFFF;
-    width: 203px;
+    width: 100vw;
+    min-width: 375px;    
     height: 171px;
     border: 1px solid black;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
 .finalizado {
     margin-top: 25px;
     margin-bottom: 24px;
-
-    /* padding-top: 15px; */
 }
 
 .finalizado-container {
@@ -268,8 +271,9 @@ body {
 
 .finalizado-figura {
     width: 23px !important;
-    padding-bottom: 10px;
-    margin-right: 12px;
+    height: 23px !important;
+    padding-bottom: 5px;
+    margin-right: 8px;
 }
 
 .finalizado-mensagem {
@@ -278,10 +282,13 @@ body {
     font-size: 18px;
 }
 
-.finalizado-container span {
+.mensagem-final {
     font-family: Recursive;
     font-weight: 400;
     font-size: 18px;
+    margin-right: 65px;
+    margin-left: 88px;
+    text-align: center;
 }
 
 

@@ -1,4 +1,8 @@
 import RenderizarIcones from "./RenderizarIcones";
+import React from "react"
+import party from "../ZapRecall-Recursos/party.png"
+import sad from "../ZapRecall-Recursos/sad.png"
+
 
 function ConcluidosIcones(props) {
 
@@ -9,10 +13,12 @@ function ConcluidosIcones(props) {
                     <footer className="concluidos-finalizado">
                         <div className="finalizado">
                             <div className="finalizado-container">
-                                <img className="finalizado-figura" src="./ZapRecall-Recursos/party.png" />
+                                <img className="finalizado-figura" src={party} />
                                 <p className="finalizado-mensagem">Parabéns!</p>
                             </div>
-                            <span>Você não esqueceu de nenhum flashcard!</span>
+                            <p className="mensagem-final">Você não esqueceu de nenhum flashcard!</p>
+                            {/* <p className="mensagem-final"></p> */}
+
                         </div>
                         <RenderizarIcones contagem={props.contagem} comprimento={props.comprimento}
                             array={props.array} />
@@ -26,10 +32,10 @@ function ConcluidosIcones(props) {
                     <footer className="concluidos-finalizado">
                         <div className="finalizado">
                             <div className="finalizado-container">
-                                <img className="finalizado-figura" src="./ZapRecall-Recursos/sad.png" />
+                                <img className="finalizado-figura" src={sad} />
                                 <p className="finalizado-mensagem">Putz...</p>
                             </div>
-                            <span>Ainda faltam alguns... Mas não desanime!</span>
+                            <p className="mensagem-final">Ainda faltam alguns... Mas não desanime!</p>
                         </div>
                         <RenderizarIcones contagem={props.contagem} comprimento={props.comprimento}
                             array={props.array} />
