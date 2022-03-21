@@ -17,8 +17,6 @@ function ConcluidosIcones(props) {
                                 <p className="finalizado-mensagem">Parabéns!</p>
                             </div>
                             <p className="mensagem-final">Você não esqueceu de nenhum flashcard!</p>
-                            {/* <p className="mensagem-final"></p> */}
-
                         </div>
                         <RenderizarIcones contagem={props.contagem} comprimento={props.comprimento}
                             array={props.array} />
@@ -50,7 +48,6 @@ function ConcluidosIcones(props) {
                 <RenderizarIcones contagem={props.contagem} comprimento={props.comprimento}
                     array={props.array} />
             </footer>
-
         )
     }
 }

@@ -9,11 +9,11 @@ function Flashcard(props) {
         <>
             {cardVirado ?
 
-                <Costas flashcard={props.flashcard} resposta={props.resposta} 
-                contador={props.contador} contador={props.contador} 
-                setContador={props.setContador} setIcone={props.setIcone}
-                array = {props.array} setArray = {props.setArray} setParabens = {props.setParabens}/> :
-                
+                <Costas flashcard={props.flashcard} resposta={props.resposta}
+                    contador={props.contador} contador={props.contador}
+                    setContador={props.setContador} setIcone={props.setIcone}
+                    array={props.array} setArray={props.setArray} setParabens={props.setParabens} /> :
+
                 <Frente pergunta={props.pergunta} setCardVirado={setCardVirado} />
             }
         </>

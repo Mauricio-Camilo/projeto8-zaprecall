@@ -8,14 +8,14 @@ function Costas(props) {
 
     return (
         <>
-            {finalizado?
+            {finalizado ?
 
-            <PerguntaFinalizada cor={cor} flashcard={props.flashcard}/>:
+                <PerguntaFinalizada cor={cor} flashcard={props.flashcard} /> :
 
-            <CostasConteudo resposta={props.resposta} setCor={setCor} 
-            setFinalizado={setFinalizado} contador={props.contador} 
-            setContador={props.setContador} setIcone={props.setIcone}
-            array = {props.array} setArray = {props.setArray} setParabens = {props.setParabens}/>
+                <CostasConteudo resposta={props.resposta} setCor={setCor}
+                    setFinalizado={setFinalizado} contador={props.contador}
+                    setContador={props.setContador} setIcone={props.setIcone}
+                    array={props.array} setArray={props.setArray} setParabens={props.setParabens} />
             }
         </>
     )

@@ -26,5 +26,4 @@ function PerguntaFinalizada (props) {
     }
 }
 
-
 export default PerguntaFinalizada;
