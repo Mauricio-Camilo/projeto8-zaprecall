@@ -1,4 +1,4 @@
-# Instagram React
+# ZapRecall
 
 An easy way to memorize some important points in any field of study using the flashcards.
 
